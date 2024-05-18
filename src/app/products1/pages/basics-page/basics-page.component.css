@@ -1,0 +1,58 @@
+/* Estilos generales para la tabla */
+.pipeTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+}
+
+/* Estilo para los bordes de la tabla */
+.pipeTable th, .pipeTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Estilo para las cabeceras de la tabla */
+.pipeTable th {
+  background-color: #f2f2f2;
+  color: #e1d3d3;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Alternar color de las filas */
+.pipeTable tr:nth-child(even) {
+  background-color: #3c3b3b;
+}
+
+/* Color de las filas al pasar el ratón */
+.pipeTable tr:hover {
+  background-color: #4b523b;
+}
+
+/* Alineación de texto */
+.pipeTable td {
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Estilo para enlaces dentro de la tabla */
+.pipeTable a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.pipeTable a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para celdas con números */
+.pipeTable .number {
+  text-align: right;
+}
+
+/* Estilo para celdas con textos importantes */
+.pipeTable .important {
+  font-weight: bold;
+  color: #d9534f;
+}

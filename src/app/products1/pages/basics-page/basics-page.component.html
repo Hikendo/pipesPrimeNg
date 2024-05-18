@@ -1,0 +1,65 @@
+<p-panel header="Piepes Basicos" class="p-1">
+  <h1><td> Pipes Basicos</h1>
+  <p>Usualmente incluidos en el Common Module</p>
+</p-panel>
+
+  <div class="grid mt-2" >
+    <div class="col-12 md:col-6 lg:col-3">
+      <p-card header="Original Name">
+       {{OriginalName}}
+      </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <p-card header="Uppercase">
+      {{OriginalName | uppercase}}
+      </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3" >
+      <p-card header="Lowercase">
+       {{OriginalName | lowercase}}
+      </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <p-card header="Titlecase">
+       {{OriginalName | titlecase}}
+      </p-card>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3">
+      <p-card header="Fecha y hora">
+
+        <table class="pipeTable" >
+          <tr >
+            <td>PIPE APLICADO</td>  <td>EFECTO DEL PIPE</td>
+           </tr>
+          <tr >
+           <td>Original Date:</td>  <td>{{customDate}}</td>
+          </tr>
+          <tr >
+           <td> Pipe Date:</td>  <td>{{customDate | date}}</td>
+          </tr>
+          <tr>
+            <td> Pipe Date Short:</td>  <td>{{customDate | date: 'short'}}</td>
+          </tr>
+          <tr>
+            <td> Pipe Date Long:</td>  <td>{{customDate | date: 'long'}}</td>
+          </tr>
+          <tr>
+            <td> Pipe Date MMMM:</td>  <td>{{customDate | date: 'MMMM'}}</td>
+          </tr>
+          <tr>
+            <td> Pipe Date MMMM dd, yyyy:</td>  <td>{{customDate | date: 'MMMM dd, yyyy'}}</td>
+          </tr>
+          <tr>
+            <td> Pipe Date Long | 'GMT-6':</td>  <td>{{customDate | date: 'long': 'GMT-6'}}</td>
+          </tr>
+          <tr>
+            <td> Pipe Date Long | 'GMT-4':</td>  <td>{{customDate | date: 'long': 'GMT-4'}}</td>
+          </tr>
+          <tr>
+            <td> Pipe Date Long | '' |'es-MX':</td>  <td>{{customDate | date: 'long':'' : 'es-MX'}}</td>
+          </tr>
+        </table>
+      </p-card>
+    </div>
+
+  </div>
